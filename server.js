@@ -38,27 +38,26 @@ app.post("/api/notes", function(req, res) {
     res.send(newNote);
   });
 });
-// //function that returns a response of "note not found" if dataNotes does not contain a note.
-// app.delete("/api/notes/:id", function(req, res) {
-//   //if dataNotes
-//   var note = dataNotes.find(i => i.id === req.params.id);
-//   if (!note) return res.send("note not found");
-//   var index = dataNotes.indexOf(note);
-//   dataNotes.splice(index, 1);
-//   fs.writeFile("db/db.json", JSON.stringify(dataNotes), function(err, data) {
-//     console.log(err, data);
-//     res.send(true);
-//   });
-// });
+//delete function, returns "note not found" if id does not match
+app.delete("/api/notes/:id", function(req, res) {
+  //if dataNotes
+  var note = dataNotes.find(i => i.id === req.params.id);
+  if (!note) return res.send("note not found");
+  var index = dataNotes.indexOf(note);
+  dataNotes.splice(index, 1);
+  fs.writeFile("db/db.json", JSON.stringify(dataNotes), function(err, data) {
+    console.log(err, data);
+    res.send(true);
+  });
+});
 
-// HTML Routes
+// /notes redirects to notes.html folder
 app.get("/notes", function(req, res) {
-  //function requests a response to get a string from notes.
   res.sendFile(path.join(__dirname, "/public/notes.html"));
 });
-//
+// * redirects to landing page folder
 app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "/public/index.html"));
 });
-//listens for an assigned port otherwise port 8080 defined at the top.
+//port listens to 8080.
 app.listen(PORT, () => console.log(`App listening on port ${PORT}`));
