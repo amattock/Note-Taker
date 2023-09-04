@@ -1,28 +1,24 @@
 {
   "name": "note-taker",
   "version": "1.0.0",
-  "description": "",
+  "description": "* GIVEN a note-taking application",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "watch": "nodemon server.js"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
-    "uuid": "^8.3.2"
+    "express": "^4.16.4"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://https://github.com/amattock/Note-Taker"
+    "url": "git+https://github.com/anthonydominguez86/note-taker-express.git"
   },
+  "keywords": [],
   "bugs": {
-    "url": "https://github.com/amattock/Note-Taker/issues"
+    "url": "https://github.com/anthonydominguez86/note-taker-express/issues"
   },
-  "homepage": "https://github.com/amattock/Note-Taker/blob/main/README.md",
-  "devDependencies": {
-    "nodemon": "^2.0.7"
-  }
+  "homepage": "https://github.com/anthonydominguez86/note-taker-express#readme"
 }
