@@ -10,15 +10,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "fs": "^0.0.1-security"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anthonydominguez86/note-taker-express.git"
+    "url": "git+https://github.com/amattock/Note-Taker"
   },
   "keywords": [],
   "bugs": {
-    "url": "https://github.com/anthonydominguez86/note-taker-express/issues"
+    "url": "https://github.com/amattock/Note-Taker/issues"
   },
-  "homepage": "https://github.com/anthonydominguez86/note-taker-express#readme"
+  "homepage": "https://github.com/amattock/Note-Taker/blob/main/README.md"
 }

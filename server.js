@@ -5,7 +5,7 @@ const fs = require("fs");
 
 // Sets up the express app
 var app = express();
-var PORT = process.env.PORT || 3001;
+var PORT = process.env.PORT || 8080;
 
 // Sets up the express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
